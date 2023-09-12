@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana e Gustavo ❤️</title>
+
+    <link rel="stylesheet" href="../style2.css">
+</head>
+<body>  
+    <section>
+        <span>mentira, n tem nada de "foda" kskdsd</span>
+        <img src="../img/img edit.jpg" alt="">
+        <a href="indextext.html" id="botaoSegue">clica aq,<br> xuxu</a>
+        <span id="diferenteSpan">Nossa marca registrada KKKK</span>
+    </section>
+
+    <script>
+        const botaoSegue = document.querySelector('#botaoSegue')
+
+        let contagem = 0
+
+        botaoSegue.addEventListener('mouseover', () => { 
+            if (contagem < 5) {
+                const novoX = Math.floor(Math.random() * (50 - (5) + 1) + (5));
+                const novoY = Math.floor(Math.random() * (50 - (-5) + 1) + (5));
+            
+                botaoSegue.style.position = 'absolute'
+                botaoSegue.style.left = `${novoX}%`
+                botaoSegue.style.top = `${novoY}%`
+
+                contagem++
+            } else if (contagem = 5) {
+                botaoSegue.innerText = 'Zoeira KKK clica agr, vai'
+                botaoSegue.style.height = '70px'
+            }
+        })
+
+    </script>
+</body>
+</html>
